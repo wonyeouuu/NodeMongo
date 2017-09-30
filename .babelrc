@@ -1,6 +1,8 @@
 {
     "presets": ["env"],
     "plugins": [
+        /* use builtIn Object.assign to transpile */
+        ["transform-object-rest-spread", { "useBuiltIns": true }],
         ["babel-plugin-root-import", {
             "rootPathSuffix": "lib",
             "rootPathPrefix": "@"
